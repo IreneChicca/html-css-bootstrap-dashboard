@@ -43,5 +43,19 @@ img {
 #sidebar {
     width: 80px;
     height: calc(100vh - 56px);
-    background-color: #10518a;
+    background-color: #051e34;
+}
+
+
+
+
+
+
+
+@media screen and (min-width:992px) {
+
+    #sidebar {
+        width: 13%;
+    }
+
 }
