@@ -10,82 +10,131 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-white w-100">
-        <div class="container-fluid">
+        <div class="container-fluid align-items-center">
+            <div>
+                <img src="./img/mobile-logo.png" alt="logosmall" class="d-sm-none">
+                <img src="img/logo.svg" alt="logobig" class="d-none d-sm-block">
+            </div>
 
-            <img src="./img/mobile-logo.png" alt="logosmall" class="d-sm-none">
-            <img src="img/logo.svg" alt="logobig" class="d-none d-sm-block">
-
-            <form class="d-flex w-50" role="search">
+            <form class="d-flex w-70" role="search">
                 <input class="form-control me-2 bg-light" type="search"
                     placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
             </form>
 
 
-            <div class="" id="">
-                <ul class="prova ">
-                    <li class="d-none d-lg-block">
-                        <i class="fa-solid fa-bell "></i>
-                    </li>
-                    <li class="d-none d-lg-block">
-                        <i class="fa-solid fa-bell "></i>
-                    </li>
-                    <li class="d-none d-lg-block">
-                        <i class="fa-solid fa-bell "></i>
-                    </li>
 
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-bell text-warning"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Profilo</a></li>
-                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
+            <ul class="menu text-end m-0">
+                <li class="d-none d-lg-inline">
+                    <i class="fa-solid fa-bell "></i>
+                </li>
+                <li class="d-none d-lg-inline">
+                    <i class="fa-solid fa-bell "></i>
+                </li>
+                <li class="d-none d-lg-inline">
+                    <i class="fa-solid fa-bell "></i>
+                </li>
 
-                        </ul>
-                    </li>
+                <li class="nav-item dropdown d-inline">
+                    <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell text-warning"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
 
-                </ul>
+                    </ul>
+                </li>
 
-            </div>
+            </ul>
+
+
 
         </div>
 
     </nav>
 
-    <div id="sidebar" class="d-flex flex-column gap-3 pt-3 align-items-center text-white">
+    <main class="d-flex">
+        <div id="sidebar" class="d-flex flex-column gap-3 pt-3 align-items-center text-white">
 
 
-        <div class="d-flex align-items-baseline gap-2">
-            <i class="fa-solid fa-house"></i>
-            <p class="d-none d-lg-block">Home</p>
+            <div class="d-flex align-items-baseline gap-2">
+                <i class="fa-solid fa-house"></i>
+                <p class="d-none d-lg-block">Home</p>
+            </div>
+
+
+            <div class="d-flex align-items-baseline gap-2">
+                <i class="fa-solid fa-chart-simple"></i>
+                <p class="d-none d-lg-block">Stats</p>
+            </div>
+
+            <div class="d-flex align-items-baseline gap-2">
+                <i class="fa-solid fa-signal"></i>
+                <p class="d-none d-lg-block">Signals</p>
+            </div>
+
+
+            <div class="d-flex align-items-baseline gap-2 mt-auto pb-3">
+                <i class="fa-solid fa-gear "></i>
+                <p class="d-none d-lg-block">Admin</p>
+            </div>
+
         </div>
 
 
-        <div class="d-flex align-items-baseline gap-2">
-            <i class="fa-solid fa-chart-simple"></i>
-            <p class="d-none d-lg-block">Stats</p>
+
+        <div id="main" class="bg-secondary w-100 ">
+
+            <div id="student-stat" class="bg-primary text-white p-3 d-flex flex-column gap-2">
+
+                <div class="d-flex gap-3 align-items-baseline ">
+                    <p>Nuovo studente</p>
+                    <span class="plus-btn p-2 border rounded text-center">+</span>
+                </div>
+
+                <div>
+                    <div class="d-flex align-items-baseline">
+                        <p class="fs-4 me-2">Boolean</p>
+                        <span class="label bg-darkblue">
+                            <p class=" m-0">Piano blaze</p>
+                        </span>
+                    </div>
+                    <div>
+                        <p class="label bg-darkblue">3 app</p>
+                        <i class="fa-solid fa-angles-right"></i>
+                        <p class="label bg-darkblue d-none d-sm-inline">Boolean mobile app</p>
+                        <p class="label bg-darkblue d-none d-sm-inline">Boolean web app</p>
+                        <p class="label bg-darkblue d-none d-sm-inline">Boolean blog app</p>
+                        <p class="label bg-darkblue d-sm-none">+</p>
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <p>Studenti online negli ultimi 30 giorni</p>
+                    <p class="fs-2">125</p>
+                </div>
+
+            </div>
+
+
         </div>
 
-        <div class="d-flex align-items-baseline gap-2">
-            <i class="fa-solid fa-signal"></i>
-            <p class="d-none d-lg-block">Signals</p>
-        </div>
+
+    </main>
 
 
 
-
-
-        <div class="d-flex align-items-baseline gap-2 mt-auto pb-3">
-            <i class="fa-solid fa-gear "></i>
-            <p class="d-none d-lg-block">Admin</p>
-        </div>
-    </div>
 
 
 
