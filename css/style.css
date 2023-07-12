@@ -33,3 +33,14 @@ img {
     display: flex;
     justify-content: space-between;
 }
+
+
+
+
+
+/* SIDEBAR */
+
+#sidebar {
+    width: 80px;
+    height: calc(100vh - 56px);
+}
