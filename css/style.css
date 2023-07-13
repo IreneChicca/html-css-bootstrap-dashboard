@@ -108,7 +108,9 @@ table img {
     font-size: .9rem;
 }
 
-
+.scroll {
+    overflow: auto;
+}
 
 
 /* MEDIA QUERY */
