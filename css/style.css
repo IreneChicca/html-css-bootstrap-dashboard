@@ -60,13 +60,6 @@ main {
 
 /* MAIN CONTENT */
 
-#main {}
-
-.plus-btn {
-    width: 2.5rem;
-    height: 2.5rem;
-    line-height: 1.25rem;
-}
 
 
 .label {
@@ -139,6 +132,11 @@ table img {
     thead td:first-child {
 
         width: 50%;
+    }
+
+
+    #offcanva {
+        width: 50% !important;
     }
 
 }
