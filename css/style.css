@@ -83,6 +83,32 @@ table img {
     margin: 5px;
 }
 
+.label-done {
+
+    background-color: green;
+    padding: .1rem .5rem;
+    border-radius: .5rem;
+    color: white;
+    font-size: .9rem;
+}
+
+.label-fail {
+    background-color: red;
+    padding: .1rem .5rem;
+    border-radius: .5rem;
+    color: white;
+    font-size: .9rem;
+}
+
+.label-process {
+    background-color: gold;
+    padding: .1rem .5rem;
+    border-radius: .5rem;
+    color: white;
+    font-size: .9rem;
+}
+
+
 
 
 /* MEDIA QUERY */
@@ -99,10 +125,17 @@ table img {
 
     #sidebar {
         width: 13%;
+        max-width: 150px;
     }
 
     form {
         width: 75%;
+    }
+
+
+    thead td:first-child {
+
+        width: 50%;
     }
 
 }
